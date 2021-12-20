@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SeanUX</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="index.js"></script>
+</head>
+
+<body>
+
+    <header class="header">
+        <a href="/" class="logo">Sean Winchester</a>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
+        <ul class="menu">
+            <li><a href="index.html">Portfolio</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#contact-section">Contact</a></li>
+        </ul>
+    </header>
+
+    <div class="project-hero">
+        <img src="images/ikeahero.png" alt="Picture" style="width:100%;">
+  
+    </div>
+
+<section class="casestudy">
+
+<div class="background">
+    <h1>Background</h1>
+    <h3>With the advent of the metaverse being just around the corner, I decided I wanted to analyse a current use of augmented reality and see how I could make it more user-friendly.
+        <br>
+        I turned my attention to the IKEA Place app, which although a great idea (allowing one to place furniture inside a room to see how it looks), appeared to suffer from some not-so-great UX decisions.
+    </h3>
+</div>
+
+<div class="challenge">
+    <h1>The challenge</h1>
+    <h3>To improve the AR experience for the user whilst also increasing the return on investment for the company.
+    </h3>
+</div>
+
+
+<div class="discovery">
+    <h1>Discovery</h1>
+    <h3>I conducted user surveys, interviews and usability tests to discover what users pain points were as well as their motivations for using the app. <br>The three main pain points were:
+
+        <br><br>
+        <li>usability issues - difficulty positioning items</li>
+        <li>navigation difficulties</li>
+        <li>lack of features</li>
+
+        <br>
+        Further research looking into the app reviews mirrored the navigation issue with many reviewers mentioning the lack of a search bar as well as a lack of available furniture.<br><br><img src="images/ikeareviews.svg" alt="IKEA Place app reviews" width="100%">
+        
+        <br><br>I then conducted a competitor analysis to see what others in the AR furniture space were doing with their interfaces. It made sense that MADE has the most AR features available as it does not have a physical store. <br>Both MADE and John Lewis provide the AR experience together with their normal e-commerce apps with a devoted section for AR viewable furniture, whereas IKEA has two separate apps. 
+        
+        <br><br>
+        <img src="images/ikeacompetitoranalysis.svg" alt="IKEA competitor analysis" width="80%">
+    </h3>
+</div>
+
+
+<div class="define"></div>
+<h1>Define</h1>
+<h3>Using all the research I collated, I then formed user personas, user empathy maps, and user journey maps. These served as a reference for my design phase later on. It also helped me decide on which features to include in my design that would elevate the customer experience.<br><br>
+    
+    <img src="images/ikeadefine.svg" alt="IKEA personas, empathy maps and user journey maps" width="100%">
+<br><br>
+    
+Ultimately, I decided to combine two apps and merge them into one. My reason for this was due to conversion rate being interrupted as soon as the user left the app to either visit the the website or the IKEA shopping app. It also allows for one less application being needed both by the consumer and the company.
+</h3>
+
+<div class="design">
+    <h1>Design</h1>
+    <h3>
+    When designing the lo-fi wireframes, rather than have an open camera screen be the homescreen of the app, which might be disconcerting to some people, I resolved to put the focus on the e-commerce aspect with the inspriration section being the first screen users see.
+    <br><br>
+    For AR interactivity, I wanted to eliminate the issue of navigating away from the AR screen to add a new item. Ensuring that the user could access everything they needed on each screen type without navigating to to the other was essential to mitigate cognitive load.
+    <br><br>
+    <img src="images/ikealofi.svg" alt="IKEA low fidelity draft" width="100%"><br><br>
+    Once I was content with my wireframes, I created a design system based on IKEA's current one that is found on the e-commerce app and the website, instead of the Place app. With this design system I created components that could be reused throughout each frame of the app. I also made them interactive so that I could have less frames needed for my final user flow.
+    <br><br>
+        
+    For the AR interface aesthetics I imitated the carousel menu for saved items commonplace on snapchat and instagram but also IKEAs own 'recently viewed items'. I opted for the AR logo to be the icon to access this as a heart could be confused for liking/unliking an item. <br><br>
+    <img src="images/ikeacarousel.svg" alt="IKEA AR carousel" width="100%"><br><br>
+    
+    I incorporated an element from the ikea website that showcases multiple products in a picture when designing the interaction for multiple items. I added both a trash icon, options to change the colour, and an 'Add to bag' CTA button to the overlay that appears when pressing the radio button.
+    <br><br>
+        <img src="images/ikealabel.png" alt="IKEA label" width="100%"><br><br>    
+    </h3>
+</div>
+
+
+<div class="results">
+<h1>Results</h1>
+<h3>Upon getting user feedback from usability tests, I found that 100% of participants preferred my design.
+    They valued the:
+    <br><br>
+    <li>ability to purchase items directly on the app</li>
+    <li>improved positioning functionality with the rotate interface</li>
+    <br>
+    Feedback for improvements to the app were to include a notification symbol that the user had items in their bag and to provide instructions on how to use the app.<br> For this first version of the app I wanted to ensure the usability was validated before committing to creating a tutorial animation.<br>
+    <br>
+    A/B tests on the navigation bar icons resulted in an upload icon being used versus a camera icon for sharing the AR creation. I plan to add a choice between a photo and video option for users in future iterations.<br><br>
+    <img src="images/ikeanavicon.png" alt="A/B test for icons" width="50%"><br><br>
+    While changing over the icons I took another look over my design and edited the product information overlay. Although the first ideation worked for a product with only three colours options, it didn't give opportunities for more colours. I moved the colour options to the bottom of the overlay in a carousel. I also increased the size of the touch targets and spacing so users wouldn't have issues selecting colours.
+    <br><br>
+    <img src="images/ikealabeledit.svg" alt="A/B test for icons" width="50%"><br><br>
+
+</h3>
+</div>
+
+<div class="final design">
+    <h1>Final design</h1>
+    <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2Ff5dhr0ipPtHBWtw0XwROTK%2FIKEA-Place-App%3Fpage-id%3D20%253A3%26node-id%3D75%253A1626%26viewport%3D241%252C48%252C0.1%26scaling%3Dscale-down%26starting-point-node-id%3D75%253A1626" allowfullscreen></iframe>
+</div>
+
+<div class="takeaway">
+    <h1>Key takeaways</h1>
+    <h3>Designing for AR was an interesting experience due to the interface having a background that could be composed of any color. This limited the use of colour when showing which icon in the navigation bar was currently active. <br><br>It was also difficult to mimic the actual movement and positioning of the objects in AR and I found that I had to inform the participants beforehand to expect this when using the prototype. Luckily, their imagination filled in the blanks.<br><br>
+    With more time and resources available, I would: 
+    <br><br>
+    <li>consider building a separate prototype in Unity for the AR section of the user flow</li> 
+    <li>work on creating a tutorial or help section of how to use the app</li>
+    <li>do more research into AR interfaces to improve pop-up interfaces</li>
+    </h3>
+</div>
+
+</section>
+<section class="contact-section" id="contact-section">
+    <div class="container">
+        <div class="contact-left">
+            <h3>Contact me</h3>
+
+
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn" type="submit"><img src="images/email.svg"
+                        alt="Email dropdown"></button>
+
+                <div id="myDropdown" class="dropdown-content">
+
+                    <button class="clicker" onclick="copyToClip(document.getElementById('foo').innerHTML)">
+                        Copy email
+                    </button>
+                    <div id=foo style="display:none">
+                        winuix@gmail.com
+                    </div>
+
+                    <a class="write-email" href="mailto:winuix@gmail.com">Write email</a>
+                </div>
+
+</section>
+
+<div class="copyright">
+    <p>Coded by myself with care and frustration.</p>
+    <p>&copy Sean Winchester 2021</p>
+</div>
+
+</body>
+
+</html>

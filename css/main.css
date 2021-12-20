@@ -1,0 +1,416 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --primary-color: black;
+  --secondary-color: white;
+}
+
+body {
+  margin: 0;
+  font-family: "montserrat";
+  background-color: #fff;
+}
+
+.dark-mode {
+  background-color: #121212;
+  color: white;
+}
+
+a {
+  color: #000;
+}
+
+/* header */
+.header {
+  background-color: white;
+  position: relative;
+  width: 100%;
+  z-index: 3;
+}
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: white;
+}
+
+.header li a {
+  display: block;
+  padding: 20px 20px;
+  text-decoration: none;
+}
+
+.header li a:hover,
+.header .menu-btn:hover {
+  font-weight: 700;
+}
+
+.current {
+  font-weight: 700;
+}
+
+.header .logo {
+  display: block;
+  float: left;
+  font-size: 2em;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+/* menu */
+.header .menu {
+  clear: both;
+  max-height: 0;
+  -webkit-transition: max-height 0.2s ease-out;
+  transition: max-height 0.2s ease-out;
+}
+
+/* menu icon */
+.header .menu-icon {
+  cursor: pointer;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.header .menu-icon .nav-icon {
+  background: #333;
+  display: block;
+  height: 2px;
+  position: relative;
+  -webkit-transition: background 0.2s ease-out;
+  transition: background 0.2s ease-out;
+  width: 18px;
+}
+
+.header .menu-icon .nav-icon:before,
+.header .menu-icon .nav-icon:after {
+  background: #333;
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  width: 100%;
+}
+
+.header .menu-icon .nav-icon:before {
+  top: 5px;
+}
+
+.header .menu-icon .nav-icon:after {
+  top: -5px;
+}
+
+/* menu btn */
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon:before {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  top: 0;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon:after {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: 0;
+}
+
+/* 48em = 768px @ 16pt font */
+@media (min-width: 48em) {
+  .header li {
+    float: left;
+  }
+  .header li a {
+    padding: 20px 30px;
+  }
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .header .menu-icon {
+    display: none;
+  }
+  .about-me .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    text-align: left;
+  }
+  .about-me .container .left-col {
+    margin: 3em 3em 0 5em;
+  }
+  .profile-img {
+    max-width: 35%;
+    margin-right: 5em;
+    margin-top: 3em;
+  }
+  .hero-image {
+    width: 100%;
+  }
+  .projects {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    margin: 0 8rem;
+  }
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  padding: 5em 2em;
+}
+
+.hero {
+  text-align: center;
+}
+
+.hero-text h1 {
+  font-weight: bold;
+  color: black;
+  font-size: 3em;
+}
+
+.hero-image {
+  width: 100%;
+}
+
+.arrow {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 2vw;
+  width: 2vw;
+  border-style: solid;
+  border-color: black;
+  border-width: 0em 0.1em 0.1em 0em;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transition: border-width 150ms ease-in-out;
+  transition: border-width 150ms ease-in-out;
+}
+
+.arrow:hover {
+  border-bottom-width: 4px;
+  border-right-width: 4px;
+}
+
+.arrow-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: white;
+  height: 10vh;
+}
+
+.project-link {
+  text-decoration: none;
+}
+
+.projects {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 3rem;
+}
+
+.card {
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border-radius: 1rem;
+  position: relative;
+}
+
+.card:hover {
+  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  position: relative;
+  top: -10px;
+  cursor: pointer;
+}
+
+.card-img {
+  border-radius: 15px 15px 0 0;
+}
+
+.container {
+  padding: 2px 16px;
+}
+
+.contact-section {
+  text-align: center;
+  background-color: white;
+}
+
+.contact-me {
+  background: var(--primary-color);
+  color: var(--secondary-color);
+  text-decoration: none;
+  padding: 0.6em 1.3em;
+  font-size: 1em;
+  border-radius: 5em;
+  font-weight: bold;
+  display: inline-block;
+}
+
+/* Dropdown Button */
+.dropbtn {
+  display: block;
+  background: transparent;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover,
+.dropbtn:focus {
+  background-color: #f0f0f0;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f0f0f0;
+  min-width: 160px;
+  -webkit-box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+  display: block;
+}
+
+.click {
+  cursor: pointer;
+}
+
+.clicker {
+  font-family: "montserrat";
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  padding: 12px 36px;
+}
+
+.clicker:hover {
+  background-color: #ddd;
+}
+
+.copyright {
+  text-align: center;
+  font-size: .9em;
+  font-weight: 100;
+}
+
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: lightgrey;
+  background-clip: content-box;
+  border: 5px solid transparent;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:vertical:hover {
+  background-color: black;
+}
+
+.left-col {
+  max-width: 55ch;
+}
+
+.profile-img {
+  width: 100%;
+}
+
+.project-hero {
+  position: relative;
+  text-align: center;
+  color: white;
+  margin: auto;
+}
+
+.casestudy {
+  margin: auto;
+  position: relative;
+  display: block;
+  max-width: 800px;
+  text-align: left;
+}
+
+.project-4-text {
+  margin: auto;
+  position: relative;
+  display: block;
+  max-width: 700px;
+  text-align: left;
+}
+
+.project-4-img {
+  position: relative;
+  display: block;
+  text-align: center;
+}
+/*# sourceMappingURL=main.css.map */

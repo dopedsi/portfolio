@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SeanUX</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="index.js"></script>
+</head>
+
+<body>
+
+    <header class="header">
+        <a href="/" class="logo">Sean Winchester</a>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
+        <ul class="menu">
+            <li><a href="index.html">Portfolio</a></li>
+            <li><a class="current" href="about.html">About</a></li>
+            <li><a href="#contact-section">Contact</a></li>
+        </ul>
+    </header>
+
+    <section class="about-me">
+        <div class="container">
+            <div class="left-col">
+                <h1>About me</h1>
+                <h3>Hello, I'm Sean. I'm currently the Lead Designer for an EdTech company based in Melbourne, Australia
+                    and have been primarily focusing on improving their Learning Management System design through lean and agile methodologies.<br><br>
+                    I enjoy identifying the problems users face through research and solve these issues to improve the
+                    end-to-end experience, creating a digital transformation full of satisfaction for both internal and
+                    external stakeholders.<br><br>
+                    Areas of specialisation include project management, analysing quantitative research for friction points, 
+                    building design systems with WCAG accessibility in mind, and rapidly delivering MVPs that adhere to HCI principles.<br><br>
+                    Naturally curious, I am constantly finding new things to learn - whether it's delving into code so I
+                    can understand and communicate better with the development team or exploring 3D modelling and AR
+                    technology to future-proof my skillset.<br><br>
+                    <a href="/">Resume</a>
+
+                </h3>
+            </div>
+
+            <img src="images/sean.profile.jpg" class="profile-img" alt="profile-image">
+        </div>
+    </section>
+
+    <section class="contact-section" id="contact-section">
+        <div class="container">
+            <div class="contact-left">
+                <h3>Contact me</h3>
+
+
+                <div class="dropdown">
+                    <button onclick="myFunction()" class="dropbtn" type="submit"><img src="images/email.svg"
+                            alt="Email dropdown"></button>
+
+                    <div id="myDropdown" class="dropdown-content">
+
+                        <button class="clicker" onclick="copyToClip(document.getElementById('foo').innerHTML)">
+                            Copy email
+                        </button>
+                        <div id=foo style="display:none">
+                            winuix@gmail.com
+                        </div>
+
+                        <a class="write-email" href="mailto:winuix@gmail.com">Write email</a>
+                    </div>
+
+    </section>
+
+    <div class="copyright">
+        <p>Coded by myself with care and frustration.</p>
+        <p>&copy Sean Winchester 2021</p>
+    </div>
+</body>
+
+</html>

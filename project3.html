@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SeanUX</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="index.js"></script>
+</head>
+
+<body>
+
+    <header class="header">
+        <a href="/" class="logo">Sean Winchester</a>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
+        <ul class="menu">
+            <li><a href="index.html">Portfolio</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#contact-section">Contact</a></li>
+        </ul>
+    </header>
+
+    <div class="project-hero">
+        <img src="images/govhero.svg" alt="Picture" style="width:100%;">
+  
+    </div>
+
+<section class="casestudy">
+
+<div class="background">
+    <h1>Background</h1>
+    <h3>GOV.UK is the official website in the United Kingdom for both citizens and non-citizens to locate information about life in the UK.
+    <br><br><img src="images/govoriginal.png" alt="Gov UK original site" width="100%"><br><br>
+    Throughout the years it has gone through many design overhauls, as recently as 2021 in fact. However, I still felt there was some more that could be done to improve the user experience.
+    </h3>
+</div>
+
+<div class="challenge">
+    <h1>The challenge</h1>
+    <h3>To find a way to improve upon a recent ideation of the website whilst abiding by the strict accessiblity guidelines that government sites should adhere to.
+    </h3>
+</div>
+
+<div class="discovery">
+    <h1>Discovery</h1>
+    <h3>I conducted user surveys, interviews and usability tests to discover frictions points and dissatisfaction with the website.
+        I assigned two tasks for the users to complete. I chose them based on what I assumed might be common searches for either a UK citizen or a visitor. The tasks were:
+        <br><br>
+        <li>to find out what council their postcode falls within</li>
+        <li>to find out the price of a standard visitor visa to the UK</li>
+        <br>
+        60% of users said they had no issue with performing the tasks assigned to them in the usability tests. The other 40% gave the following feedback:
+        <br><br>
+        <li>difficulty finding information</li>
+        <li>easy to get lost after a few clicks</li>
+        <li>too much text, especially for non-native English speakers</li><br>
+    
+        I then did a comparative analysis to see how other world governments structured their websites, focusing on the layout of the topics and the search function.
+        <br><br>
+        <img src="images/govukcomparativeanalysis.svg" alt="Gov UK comparative analysis" width="80%">
+        <br>From my exploration I picked out certain features that I thought could be a solution to Gov UK's issues:<br><br>
+        <li>New Zealand's layout of topics seemed less squashed due to white space and horizontal lines</li>
+        <li>Australia's automated search function was great, but didn't provide extensive options</li>
+        <li>The position of Canada's frequently searched seemed more natural than Gov Uk's</li>
+    </h3>
+</div>
+
+
+<div class="define"></div>
+<h1>Define</h1>
+<h3>I created user personas, user empathy maps, and user journey maps. These served as a reference for my design phase later on.
+    <img src="images/govukdefine.svg" alt="GovUK personas, empathy maps and user journey maps" width="100%">
+</h3>
+
+<div class="design">
+    <h1>Design - Homepage</h1>
+    <h3>Through my research into the website I had found that they had two design systems (an outdated version and a current version) on the website. However, when performing accessibility checks and interaction design on the website I noticed that some colours were inconsistent. I rectified these issues when replicating their design system.
+    <br><br><img src="images/govissues.png" alt="Design issues" width="100%"><br><br>
+    <br><img src="images/govdesignsystem.png" alt="Design system" width="100%"><br><br>
+    I drafted various lo-fi and mid-fi takes on the homepage to see what would work and performed A/B tests with users to see which version was preferred. 
+    <br>
+    For my search bar A/B test, left aligned was preferred over center aligned.<br>
+    I also tested search bar position on the page, bringing it down to above the topics. This was abandoned on the realisation that users might get confused that this search was for topics only, not government activity.
+    <br><br><img src="images/govsearch.svg" alt="" width="100%"><br><br>
+    I resolved to retain the search bar's original position in the banner, however I removed the shifting effect when searching from the nav bar on the homepage in order to negate cognitive load on the user.
+    <br><br><img src="images/govsearch2.svg" alt="" width="100%"><br><br>
+    I labelled the topic section as this was missing from the official site and although I wanted to use a card based format based on the Australian website, I ran into issues as the text beneath each topic was inconsistent in length. Though this format helped separate each topic from eachother, the text looked cramped.
+    <br><br><img src="images/govcardissue.svg" alt="" width="100%"><br><br>
+    Another problem was that the black text didn't match the design system style guide of using blue for clickable links.
+    Instead, I emulated the New Zealand website's topic style and A/B tested both ideations with users to ensure I'd made the right decision.
+    <br><br><img src="images/govhome.svg" alt="" width="100%"><br><br>
+    The position of the 'Popular on GOV.UK' box looked awkward and out of place (and also didn't follow the aforementioned link colour rule) so I brought it down to below the banner and changed the text colour to blue.
+    </h3>
+</div>
+
+<div class="design">
+    <h1>Design - Queries</h1>
+    <h3>As users felt that the website was 'too wordy', a search result offering up tens of thousands of results wasn't practical. Due to the enormity of Gov UK I couldn't approach it in the same way the Australian search does so I took inspiration from Google.
+    With simple queries, Google provides the answer at the top of the page in a large font size. I thought that this would be a clean and minimalistic method of doing a search.<br>
+    In my design I included an option to perform an advanced search, links to related pages and a feedback field below the search to generate data to improve future searches and designs.
+    <br><br><img src="images/govsearch1.svg" alt="" width="100%"><br><br>
+    However, a search that seems as simple as the price of a visa isn't quite so. 
+    <br>
+    Often, a user won't know the name of the visa they're looking for and there are a variety of different ones. I then decided to use the method the website uses for checking which council a user's postcode belongs to.<br><br><img src="images/govtaskflow.svg" alt="" width="100%"><br><br>
+    Utilising this method meant there was consistency with other areas of the website. It also meant that the result could be narrowed down through the user answering questions rather than a complex algorithm.<br>
+    </h3>
+    </div>
+
+<div class="results">
+<h1>Results</h1>
+<h3>Upon conducting user feedback and usability tests, participants commented that the homepage had a cleaner look that was more spaced out than the original site.<br> They also gave positive feedback on how the search results appeared and how much quicker it was to find the information they were looking for without having to read through endless text. 
+<br><br>
+I realised afterwards when looking at the price of the visa, users would need to specify which country they are from in order to see the price in their currency. So I added this into the task flow diagram and final design.
+<br><br><img src="images/govflow.svg" alt="Task flow" width="100%"><br><br>
+
+</h3>
+</div>
+
+
+
+<div class="final design">
+    <h1>Final design</h1>
+
+    <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FYpVtxiHusmgfY7nHK87qlo%2FGov-UK-Desktop%3Fpage-id%3D5%253A3%26node-id%3D184%253A1310%26viewport%3D241%252C48%252C0.25%26scaling%3Dscale-down-width%26starting-point-node-id%3D184%253A1310" allowfullscreen></iframe>
+</div>
+
+<div class="takeaway">
+    <h1>Key takeaways</h1>
+    <h3>Accessibility constraints play a huge role in desiging the citizen experience. Due to the expansiveness of both the website and the types of people who might use the website, there were only so many improvements I could make without affecting usability for people who might have trouble otherwise.<br><br>
+    I believe the improvements I made to the 'search for visa fees' user flow are contigent on a development team giving the okay on whether it is feasible to employ throughout the entire site, especially when it consists of over half a million pages.<br>Although my solution may not work for all of the flows a user might take on the website, if it can alleviate the frustrations of certain user flows it is a viable amendment. Perhaps for simpler searches that have definitive answers, my initial solution emulating Google could work.
+    </h3>
+</div>
+
+<div class="update">
+    <h1>Update*</h1>
+    <h3>Since I completed my project, GOV UK updated their website. Three of my suggested amendments made their way onto the official website.<br><br>
+        <img src="images/updatedgov.svg" alt="Updated official Gov Uk design" width="100%"><br><br>
+        <li>They moved the 'Popular on GOV.UK' list below the blue banner.</li>
+        <li>They redesigned the layout of the topics and labelled it 'Topics'.</li>
+        <li>They are currently trialing a beta version of my task flow using dropdown options.</li>
+        <br> This validates my case study as being both feasible and viable. I'm surprised how identical their redesign of the topics is to mine. 
+    </h3>
+</div>
+
+</section>
+<section class="contact-section" id="contact-section">
+    <div class="container">
+        <div class="contact-left">
+            <h3>Contact me</h3>
+
+
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn" type="submit"><img src="images/email.svg"
+                        alt="Email dropdown"></button>
+
+                <div id="myDropdown" class="dropdown-content">
+
+                    <button class="clicker" onclick="copyToClip(document.getElementById('foo').innerHTML)">
+                        Copy email
+                    </button>
+                    <div id=foo style="display:none">
+                        winuix@gmail.com
+                    </div>
+
+                    <a class="write-email" href="mailto:winuix@gmail.com">Write email</a>
+                </div>
+
+</section>
+
+<div class="copyright">
+    <p>Coded by myself with care and frustration.</p>
+    <p>&copy Sean Winchester 2021</p>
+</div>
+
+</body>
+
+</html>
