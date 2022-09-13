@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="/">
     <title>Sean Winchester UXD Portfolio</title>
     <link rel="icon" type="image/x-icon" href="/images/favicon.svg">
     <link rel="stylesheet" href="css/main.css">
@@ -29,29 +30,22 @@
         <div class="container">
             <div class="hero-text">
                 <h1>Hi, I'm Sean.</h1>
-                <h3>I'm a UX designer from London based in South Korea.<br>
-                    Enhancing experiences with data and deliverables.</h3>
+                <h1 class="animation">I'm <span class="auto-type"></span></h1><br>
+                <h2>Currently based in South Korea working at <span class="company">Projectify</span></h2>
                     <br>
                     <br>
                     <br>
                     <br>
             </div>
         </div>
-        <div>
-            
-            <img src="images/animation.gif"  class="hero-image" alt="hero image">
-            <br>
-            <br>
-            <br>
-        </div>
-        <div class="arrow-container">
-            <a data-scroll href="#project-section">
-                <div class="arrow"></div>
-            </a>
-        </div>
+ 
     </section>
 
-
+    <div class="arrow-container">
+        <a data-scroll href="#project-section">
+            <div class="arrow"></div>
+        </a>
+    </div>
     
     <section class="projects" id="project-section">
         <a class="project-link" href="projectify.html">
@@ -146,6 +140,17 @@
         <p>&copy Sean Winchester 2022</p>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <script>
+        var typed = new Typed(".auto-type",{
+            strings: ["a product designer.", "a researcher.", "a team player.", "a problem solver.", "an empathizer."],
+            typeSpeed: 40,
+            backSpeed: 20,
+            loop: true
+        })
+    </script>
+             
 </body>
 
 
