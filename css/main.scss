@@ -178,6 +178,20 @@ a {
     grid-template-columns: repeat(2, 1fr);
     margin: 0 8rem;
   }
+  
+  .sub-title {
+    margin-left: 10rem;
+
+  }
+  
+  .fix-gap {
+    margin: 0;
+  }
+
+  .design-challenges {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 8rem;
+  }
 
   .hero {
     margin-left: 8rem;
@@ -216,7 +230,7 @@ section {
 }
 
 .company {
-  
+  font-weight: 700;
 }
 
 
@@ -253,6 +267,15 @@ section {
 }
 
 .projects {
+  display: grid;
+  grid-gap: 3rem;
+}
+
+.sub-title {
+  margin-left: 8rem;
+}
+
+.design-challenges {
   display: grid;
   grid-gap: 3rem;
 }
