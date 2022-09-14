@@ -175,11 +175,11 @@ a {
     margin: 0 8rem;
   }
   
-  .fix-gap {
-    margin-left: 4rem;
+  .sub-title{
+    margin-left: 8rem;
     margin-bottom: 0;
+    padding: 0 2rem;
   }
-
 
   .design-challenges {
     grid-template-columns: repeat(2, 1fr);
@@ -262,6 +262,12 @@ section {
   display: -ms-grid;
   display: grid;
   grid-gap: 3rem;
+}
+
+.sub-title{
+  text-align: left;
+  margin-bottom: 0;
+  padding: 0 2rem;
 }
 
 .design-challenges {
