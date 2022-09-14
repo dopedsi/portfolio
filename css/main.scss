@@ -298,6 +298,21 @@ section {
   border-radius: 15px 15px 0 0;
 }
 
+.pill {
+  background-color: rgb(233,229,221);
+  border: none;
+  color: black;
+  font-weight: 700;
+  font-size: small;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 2px 1em 0 auto;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
 .container {
   padding: 2px 16px;
 }
