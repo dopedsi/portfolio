@@ -171,10 +171,25 @@ a {
     margin-top: 3em;
   }
   .projects {
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     margin: 0 8rem;
   }
+  
+  .sub-title {
+    margin-left: 10rem;
+
+  }
+  
+  .fix-gap {
+    margin: 0;
+  }
+
+
+  .design-challenges {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 8rem;
+  }
+
   .hero {
     margin-left: 8rem;
     padding-top: 12rem;
@@ -206,7 +221,7 @@ section {
 }
 
 .company {
-  text-decoration: underline;
+  font-weight: 700;
 }
 
 
@@ -248,6 +263,12 @@ section {
 }
 
 .projects {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 3rem;
+}
+
+.design-challenges {
   display: -ms-grid;
   display: grid;
   grid-gap: 3rem;
